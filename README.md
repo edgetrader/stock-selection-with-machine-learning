@@ -6,7 +6,7 @@ Purpose of this analysis is to predict 1-month stock returns of securities in CS
 This process will repeat every month and the strategy will be backtested to determine with whether the prediction model is good enough for consistent outperformance over the index/benchmark.
 
 ## Platform and Data
-JoinQuant
+The analysis is entirely done on [JoinQuant](www.joinquant.com) research platform.  All data like index securities, factors and prices are downloaded on using JQData api on the platform.  Documentation are in Chinese.
 
 ## Notebook
 1. https://github.com/edgetrader/stock-selection-with-machine-learning/blob/master/notebook/csi300-stock-selection.ipynb
