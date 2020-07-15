@@ -14,13 +14,13 @@ The analysis is entirely done on [JoinQuant](www.joinquant.com) research platfor
 ---
 # Trading Strategy
 
-1. **Benchmark**: CSI300   
-2. **Stock Universe**: All securities in CSI300  
-3. **Trading Frequency**: Every last day business day of the month  
-4. **Stock picking strategy**: Select a maximum of 10 securities that are predicted by a machine learning model that have high probability of making at least 10% returns in the following month.  
-5. **ML model**: Light GBM - Multiclassification model.  Trained with 45 factors as features and performed multi-classification on returns in the following month.  Multi-classification as the returns are categorised to 5 levels based on their performance.  'A' being securities having at least 10% returns for example.  
-6. **Other considerations**:   
-  - Securities with incomplete or missing factor data are excluded from the selection process.  
-  - All securities are sold before new ones are purchased.  This process can be improved to minimise selling and buying of the same security on the same day.
-  - All selected securities are transacted with equal weights based on portfolio size at the point in time.  Weights of each security can be improved and efficiently determined based on modern portfolio theory and efficient frontier.
+**Benchmark**: CSI300   
+**Stock Universe**: All securities in CSI300  
+**Trading Frequency**: Every last day business day of the month  
+**Stock picking strategy**: Select a maximum of 10 securities that are predicted by a machine learning model that have high probability of making at least 10% returns in the following month.  
+**ML model**: Light GBM - Multiclassification model.  Trained with 45 factors as features and performed multi-classification on returns in the following month.  Multi-classification as the returns are categorised to 5 levels based on their performance.  'A' being securities having at least 10% returns for example.  
+**Other considerations**:   
+Securities with incomplete or missing factor data are excluded from the selection process.  
+All securities are sold before new ones are purchased.  This process can be improved to minimise selling and buying of the same security on the same day.  
+All selected securities are transacted with equal weights based on portfolio size at the point in time.  Weights of each security can be improved and efficiently determined based on modern portfolio theory and efficient frontier.  
 
