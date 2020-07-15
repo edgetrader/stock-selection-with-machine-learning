@@ -18,7 +18,8 @@ The analysis is entirely done on [JoinQuant](www.joinquant.com) research platfor
 **Stock Universe**: All securities in CSI300  
 **Trading Frequency**: Every last day business day of the month  
 **Stock picking strategy**: Select a maximum of 10 securities that are predicted by a machine learning model that have high probability of making at least 10% returns in the following month.  
-**ML model**: Light GBM - Multiclassification model.  Trained with 45 factors as features and performed multi-classification on returns in the following month.  Multi-classification as the returns are categorised to 5 levels based on their performance.  'A' being securities having at least 10% returns for example.  
+**ML model**: Light GBM - Multiclassification model.  Trained with 45 factors as features and performed multi-classification on next month returns.  Multi-classification as the returns are categorised to 5 levels based on their performance.  For example, 'A' being securities having at least 10% returns and 'E' being securities having at least -10% returns.  
+**Sample Features**: beta, sharpe_rate_60, Variance20, liquidity, momentum as made available on [JQData Factor List](https://www.joinquant.com/help/api/help?name=factor_values)
 **Other considerations**:   
 Securities with incomplete or missing factor data are excluded from the selection process.  
 All securities are sold before new ones are purchased.  This process can be improved to minimise selling and buying of the same security on the same day.  
