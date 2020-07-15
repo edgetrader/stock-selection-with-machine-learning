@@ -14,7 +14,7 @@ The analysis is entirely done on [JoinQuant](www.joinquant.com) research platfor
 ---
 # Trading Strategy
 
-**Benchmark**: CSI300. 
+**Benchmark**: CSI300   
 **Stock Universe**: All securities in CSI300  
 **Trading Frequency**: Every last day business day of the month  
 **Stock picking strategy**: Select a maximum of 10 securities that are predicted by a machine learning model that have high probability of making at least 10% returns in the following month.  
