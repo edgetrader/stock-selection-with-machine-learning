@@ -12,14 +12,15 @@ The analysis is entirely done on [JoinQuant](www.joinquant.com) research platfor
 1. https://github.com/edgetrader/stock-selection-with-machine-learning/blob/master/notebook/csi300-stock-selection.ipynb
 
 ---
-# Trading Strategy
+# Trading Algorithm
 
 **Benchmark**: CSI300   
 **Stock Universe**: All securities in CSI300  
-**Trading Frequency**: Every last day business day of the month  
-**Stock picking strategy**: Select a maximum of 10 securities that are predicted by a machine learning model that have high probability of making at least 10% returns in the following month.  
-**ML model**: Light GBM - Multiclassification model.  Trained with 45 factors as features and performed multi-classification on next month returns.  Multi-classification as the returns are categorised to 5 levels based on their performance.  For example, 'A' being securities having at least 10% returns and 'E' being securities having at least -10% returns.  
-**Sample Features**: beta, sharpe_rate_60, Variance20, liquidity, momentum as made available on [JQData Factor List](https://www.joinquant.com/help/api/help?name=factor_values)  
+**Trading Frequency**: Every last business day of the month  
+**Strategy**: Stock Picking.  Select a maximum of 10 securities that are predicted by a machine learning model that have high probability of making at least 10% returns in the following month.  
+**Machine Learning model**: Light GBM - Multiclassification model.  Trained with 45 factors as features and performed multi-classification on next month returns.  Multi-classification as the returns are categorised to 5 levels based on their performance.  For example, 'A' being securities having at least 10% returns and 'E' being securities having at least -10% returns.  Model is retrained and updated with latest training data every last business day of the month.
+**Sample Features**: beta, sharpe_rate_60, Variance20, liquidity, momentum as made available on [JQData Factor List](https://www.joinquant.com/help/api/help?name=factor_values)
+**Training Data**： Past 36 months of monthly factor data
 **Other considerations**:   
 - Securities with incomplete or missing factor data are excluded from the selection process.  
 - All securities are sold before new ones are purchased.  This process can be improved to minimise selling and buying of the same security on the same day.  
