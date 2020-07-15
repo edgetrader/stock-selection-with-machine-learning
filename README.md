@@ -21,7 +21,7 @@ The analysis is entirely done on [JoinQuant](www.joinquant.com) research platfor
 **ML model**: Light GBM - Multiclassification model.  Trained with 45 factors as features and performed multi-classification on next month returns.  Multi-classification as the returns are categorised to 5 levels based on their performance.  For example, 'A' being securities having at least 10% returns and 'E' being securities having at least -10% returns.  
 **Sample Features**: beta, sharpe_rate_60, Variance20, liquidity, momentum as made available on [JQData Factor List](https://www.joinquant.com/help/api/help?name=factor_values)  
 **Other considerations**:   
-Securities with incomplete or missing factor data are excluded from the selection process.  
-All securities are sold before new ones are purchased.  This process can be improved to minimise selling and buying of the same security on the same day.  
-All selected securities are transacted with equal weights based on portfolio size at the point in time.  Weights of each security can be improved and efficiently determined based on modern portfolio theory and efficient frontier.  
+- Securities with incomplete or missing factor data are excluded from the selection process.  
+- All securities are sold before new ones are purchased.  This process can be improved to minimise selling and buying of the same security on the same day.  
+- All selected securities are transacted with equal weights based on portfolio size at the point in time.  Weights of each security can be improved and efficiently determined based on modern portfolio theory and efficient frontier.  
 
