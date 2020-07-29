@@ -1,5 +1,7 @@
 # Stock Selection using Machine Learning Techniques
 
+UPDATES:  ***Included new analysis to perform stock selection based on weekly return predictions.***
+
 ## Summary
 Purpose of this analysis is to predict 1-month stock returns of securities in CSI 300. Based on predicted returns performance, each stock will be assigned to different performance categories. Stocks with good performance will be picked and invested at the end of the month.
 
@@ -10,6 +12,7 @@ The analysis is entirely done on [JoinQuant](www.joinquant.com) research platfor
 
 ## Notebook
 1. https://github.com/edgetrader/stock-selection-with-machine-learning/blob/master/notebook/csi300-stock-selection.ipynb
+2. https://github.com/edgetrader/stock-selection-with-machine-learning/blob/master/notebook/csi300-stock-selection-weekly.ipynb
 
 ---
 # Trading Algorithm
