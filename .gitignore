@@ -4,6 +4,7 @@ notebook2/
 rscript2/
 src/config.py
 doc/
+data-weekly/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
